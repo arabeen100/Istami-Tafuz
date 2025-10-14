@@ -2,7 +2,7 @@
 
 A modern web app for listening to Quran recitations, tafsir, live TV, and radio, built with React, TypeScript, Redux Toolkit, RTK Query, Tailwind CSS, and RESTful APIs.
 
-**Live Demo:** [https://listen-win.vercel.app/](https://listen-win.vercel.app/)
+**Live Demo:** [https://istami-tafuz.vercel.app/](https://istami-tafuz.vercel.app/)
 
 ## 🔍 Overview
 
@@ -34,7 +34,7 @@ A modern web app for listening to Quran recitations, tafsir, live TV, and radio,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/arabeen100/listen-win/
+   git clone https://github.com/arabeen100/Istami-Tafuz
    cd listen-win
 
 2. Install dependencies:
