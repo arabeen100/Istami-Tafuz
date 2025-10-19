@@ -75,12 +75,12 @@ html{
 
 #page-left,
 #page-right {
-  transform: rotateY(0deg);          /* الوضع الطبيعي */
+  transform: rotateY(0deg);          
   transform-origin: center left;
   backface-visibility: hidden;
   perspective: 1000px;
   transform-style: preserve-3d;
-  transition: transform 0.7s ease;   /* عشان التقليب يبقى ناعم */
+  transition: transform 0.7s ease;  
 }
 
 #page-right {
