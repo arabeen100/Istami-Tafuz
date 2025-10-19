@@ -66,7 +66,7 @@ export default function QuranViewer({ id,suwar }:any) {
   if (!selectedSurah) return <p>❌ السورة غير موجودة</p>;
 
   return (
-    <div className="flex flex-col items-center gap-4 w-full bg-primary">
+    <div className="flex flex-col rounded-lg border-2 border-text items-center gap-4 w-full bg-primary">
       <h1 className="text-2xl font-bold mb-4 pt-5 text-text">سورة {selectedSurah.name}</h1>
 
       <div className="relative flex justify-center gap-4 w-[80%] md:w-[50%] max-w-5xl bg-white">
