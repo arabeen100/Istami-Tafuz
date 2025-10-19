@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useAppSelector } from '../../hooks/reduxTyped';
 import logo from "../../assets/WhatsApp Image 2025-10-12 at 18.33.46.jpeg"
 import { BookOpenText } from 'lucide-react';
+import QuranViewer from './QuranViewer';
 const Surah = () => {
   const{data:suwar}=useGetSuwarQuery({language:"ar"})
   const{reciterId,surahId}=useParams();
@@ -29,7 +30,6 @@ const Surah = () => {
   },[suwar])
   return (
     <main className="md:w-[768px] lg:w-[976px] xl:w-[1440px] mx-auto w-[95%] mt-5 flex flex-col gap-5 items-center  min-h-[650px]">
-
     {isLoading?
     <div className="w-full  grid place-content-center">
           <img
@@ -39,6 +39,8 @@ const Surah = () => {
           />
 
     </div>:
+    <div className='w-full flex flex-col gap-5'>
+    <QuranViewer id={String(surahId)} suwar={suwar}/>
     <AudioPlayer
     className='custom-audio-player relative'
       src={`${server}${surahId?.length===1?`00${surahId}`:surahId?.length===2?`0${surahId}`:surahId}.mp3`}
@@ -53,8 +55,10 @@ const Surah = () => {
 
         </div>
       ]}
-    />    
+    /> 
+    </div>   
     }
+    
     </main>
   )
 }

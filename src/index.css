@@ -73,3 +73,27 @@ html{
   scroll-behavior: smooth;
 }
 
+#page-left,
+#page-right {
+  transform: rotateY(0deg);          /* الوضع الطبيعي */
+  transform-origin: center left;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;   /* عشان التقليب يبقى ناعم */
+}
+
+#page-right {
+  transform-origin: center right;
+}
+
+#page-left {
+  transform-origin: center left;
+}
+.flip-next {
+  transform: rotateY(-180deg);
+}
+
+.flip-prev {
+  transform: rotateY(180deg);
+}
