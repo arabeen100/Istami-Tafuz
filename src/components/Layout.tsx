@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import Scrolltop from "./ScrollToTop"
 const Layout = () => {
   return (
-    <div className="bg-background flex flex-col">
+    <div className="bg-background min-h-screen flex flex-col">
       <Scrolltop />
       <Navbar />
       <main className="flex-1">
